@@ -1,10 +1,10 @@
-const menu=[{id:1,title:"Idly",category:"Breakfast",price:"13.99",img:"idly.jpg",desc:"Idli is made of urad dal or skinned black gram and rice. Urad dal is high in protein and calcium."},
-{id:2,title:"Biriyani",category:"Lunch",price:"11.99",img:"biriyani.jpg",desc:"There are various forms of Hyderabadi biryani. One such biryani is the kachay gosht ki biryani or the dum biryani"},
-{id:3,title:"Full Meals",category:"Lunch",price:"12.99",img:"full-meal.jpg",desc:"Buttermilk Sambar. A recipe that's sure to draw recipe requests"},
-{id:4,title:"Dosa",category:"Breakfast",price:"13.99",img:"dosa.jpg",desc:"I guarantee you will have a nice crisp dosa! Why is my dosa sticking to the pan"},
-{id:5,title:"Parota",category:"Dinner",price:"10.99",img:"poratta.jpg",desc:"Parotta is traditionally served with Beef Roast, Mutta Curry, or Vegetable Kurma for breakfast"},
-{id:6,title:"Kothu Porata",category:"Dinner",price:"09.99",img:"kothu-poratta.jpg",desc:"Kothu Parotta is a popular street food in South-India. It is made with parotta, a soft, crispy, and layered flat bread, and left over chicken curry"},
-{id:7,title:"Pongal",category:"Breakfast",price:"15.99",img:"pongal.jpg",desc:"Pongal is a popular South Indian food prepared with rice & moong dal, either to a sweet or savory dish"}]
+const menu=[{id:1,title:"Idly",category:"Breakfast",price:"13.99",img:"images/idly.jpg",desc:"Idli is made of urad dal or skinned black gram and rice. Urad dal is high in protein and calcium."},
+{id:2,title:"Biriyani",category:"Lunch",price:"11.99",img:"images/biriyani.jpg",desc:"There are various forms of Hyderabadi biryani. One such biryani is the kachay gosht ki biryani or the dum biryani"},
+{id:3,title:"Full Meals",category:"Lunch",price:"12.99",img:"images/full-meal.jpg",desc:"Buttermilk Sambar. A recipe that's sure to draw recipe requests"},
+{id:4,title:"Dosa",category:"Breakfast",price:"13.99",img:"images/dosa.jpg",desc:"I guarantee you will have a nice crisp dosa! Why is my dosa sticking to the pan"},
+{id:5,title:"Parota",category:"Dinner",price:"10.99",img:"images/poratta.jpg",desc:"Parotta is traditionally served with Beef Roast, Mutta Curry, or Vegetable Kurma for breakfast"},
+{id:6,title:"Kothu Porata",category:"Dinner",price:"09.99",img:"images/kothu-poratta.jpg",desc:"Kothu Parotta is a popular street food in South-India. It is made with parotta, a soft, crispy, and layered flat bread, and left over chicken curry"},
+{id:7,title:"Pongal",category:"Breakfast",price:"15.99",img:"images/pongal.jpg",desc:"Pongal is a popular South Indian food prepared with rice & moong dal, either to a sweet or savory dish"}]
 const CategoryButton = document.querySelector(".btn-container")
 var sectionCenter = document.querySelector(".section-center");
 window.addEventListener("DOMContentLoaded",function(){
