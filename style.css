@@ -75,12 +75,15 @@
 }
 /* Navbar */
 nav{
-    padding: 0px;
-    margin: 0px;
     position: fixed;
-    width: 150px;
+    width: 45px;
     margin-top: 150px;
     box-shadow: 2px 2px 4px rgb(59, 59, 59);
+    z-index: 1;
+}
+nav ul{
+    padding: 0px;
+    margin: 0px;
 }
 nav li{
     height: 40px;
@@ -95,7 +98,7 @@ nav li a{
     height: 100%;
     padding-left: 25px;
     border-bottom: 1px solid black;
-    transition: all 0.3s ease-out;
+    text-decoration: none;
 }
 nav li:nth-child(1) a {
     background-color: 	#3b5998;
@@ -121,6 +124,7 @@ nav li a span{
     font-weight: bold;
     letter-spacing: 2px;
     padding-left: 14px;
+    display: none;
 }
 
 
