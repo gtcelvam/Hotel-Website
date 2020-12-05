@@ -42,13 +42,21 @@ filterbutton.forEach(function(btn){
    function displayMenu(Menuitem){
     let displayMenu = Menuitem.map(function(item){
         return `<article class="menu-item">
-        <img src=${item.img} alt="">
+        <img src=${item.img} alt="img">
         <div class="item-info">
             <header>
                 <h4>${item.title}</h4>
                 <h4 class="price">$${item.price}</h4>
             </header>
             <p>${item.desc}</p>
+        </div>
+        <div class="order">
+            <div id="des">
+            <p><i>To Order ${item.title}</i></p>
+            </div>
+            <div id="price">
+            <p><i>Click here</i></p>
+            </div>
         </div>
     </article>`
     });

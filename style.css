@@ -4,22 +4,52 @@
     list-style: none;
     text-decoration: none;
 }
-.menu-item img{
-    position: relative;
-    width: 100%;
-    height: 200px;
-}
+/* Each Menu item */
 .menu-item{
+    position: relative;
     width: 300px;
     height: 330px;
     overflow: hidden;
     margin: 50px 70px;
     box-shadow: 2px 2px 4px  black;
-    transition: 0.1s ease-out;
+    border-radius: 5px;
 }
-.menu-item:hover{
-    transform: skewY(-10deg);
+.menu-item img{
+    position: relative;
+    width: 100%;
+    height: 200px;
 }
+/* Each Menu item */
+/* Order link */
+.order{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    color: wheat;
+    background-color: rgba(74, 68, 87, 0.9);
+    box-shadow: 0px 0px 4px black;
+    display: none;
+    animation: anime 0.3s ease-in-out;
+    font-size: 1em;
+    font-weight: bold;
+}
+.menu-item:hover>.order{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    line-height: 100px;
+    padding: 0px 10px;
+}
+@keyframes anime{
+    0%{
+        bottom: -50px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+/* Order link End */
 .btn-container{
     position: relative;
     margin-top: 500px;
