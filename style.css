@@ -176,6 +176,16 @@ nav li a:hover>i{
 .slider-container .carousel-caption{
     text-shadow: 2px 4px 4px black;
 }
+/* Dessert Starts here */
+.varieties{
+    position: relative;
+}
+.dessert-image{
+    position: relative;
+    height: auto;
+}
+
+/* Dessert Ends here */
 /* Footer */
 footer{
     position: absolute;

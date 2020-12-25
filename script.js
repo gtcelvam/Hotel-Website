@@ -64,4 +64,35 @@ filterbutton.forEach(function(btn){
     sectionCenter.innerHTML = displayMenu;
    }
 });
+/* Dessert Slider */
+const iceCream_list =[{i_name : "falooda",id : "falooda",title : "Falooda",price : "2$",image : "https://shwetainthekitchen.com/wp-content/uploads/2020/06/IMG_0058-scaled.jpg"}];
+const varieties = document.querySelector(".varieties");
+class iceCream{
+    constructor(title,image,id){
+        this.title = title;
+        this.image = image;
+        this.id = id;
+    }
+    getIceCream(){
+        var dessert_image_div = document.createElement("div");
+        dessert_image_div.setAttribute("id",this.id);
+        var iceCream_image = document.createElement("img");
+        iceCream_image.setAttribute("src",this.image);
+        iceCream_image.style.width = "200px";
+        dessert_image_div.classList.add("dessert-image");
+        var iceCream_title = document.createElement("h1");
+        iceCream_title.innerHTML = `<i>${this.title}</i>`;
+        dessert_image_div.appendChild(iceCream_image);
+        dessert_image_div.appendChild(iceCream_title);
+        varieties.appendChild(dessert_image_div);
+    }
+}
 
+document.addEventListener("DOMContentLoaded",()=>{
+    iceCream_list.forEach(creation);
+});
+
+function creation(item){
+    var ready = new iceCream(item.title,item.image,item.id);
+    ready.getIceCream();
+}
