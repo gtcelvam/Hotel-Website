@@ -65,7 +65,13 @@ filterbutton.forEach(function(btn){
    }
 });
 /* Dessert Slider */
-const iceCream_list =[{i_name : "falooda",id : "falooda",title : "Falooda",price : "2$",image : "https://shwetainthekitchen.com/wp-content/uploads/2020/06/IMG_0058-scaled.jpg"}];
+const iceCream_list =[{i_name : "falooda",id : "falooda",title : "Falooda",price : "2$",image : "https://shwetainthekitchen.com/wp-content/uploads/2020/06/IMG_0058-scaled.jpg"},
+                      {i_name : "strawberry",id : "strawberry",title : "Strawberry",price : "1.8$",image : "https://www.biggerbolderbaking.com/wp-content/uploads/2018/05/Strawberry-Ice-Cream-Temp-2.jpg"},
+                      {i_name : "chocolate",id : "chocolate",title : "Chocolate",price : "2.1$",image : "https://www.davidlebovitz.com/wp-content/uploads/2020/05/Chocolate-chip-ice-cream-gelato-amaro-recipe_-9.jpg"},
+                      {i_name : "vennila",id : "vennila",title : "Vennila",price : "2.3$",image : "https://laurenslatest.com/wp-content/uploads/2020/08/vanilla-ice-cream-5-copy.jpg"},
+                      {i_name : "cookies n cream",id : "cookies n cream",title : "Cookies n cream",price : "2.1$",image : "https://homemadehooplah.com/wp-content/uploads/2016/07/Cookies-and-Cream-Ice-Cream-4.jpg"},
+                      {i_name : "buttered pecan",id : "buttered pecan",title : "Buttered pecan",price : "2$",image : "https://lemonsandzest.com/wp-content/uploads/2019/07/Maple-Cinnamon-Pecan-No-Churn-Ice-Cream-28.jpg"},
+                      {i_name : "neapolitan",id : "neapolitan",title : "Neapolitan",price : "2$",image : "https://beautyberryboutique.weebly.com/uploads/2/5/9/1/25911687/s971665060652142755_p1_i1_w736.jpeg"}];
 const varieties = document.querySelector(".varieties");
 class iceCream{
     constructor(title,image,id){
@@ -75,9 +81,12 @@ class iceCream{
     }
     getIceCream(){
         var dessert_image_div = document.createElement("div");
-        dessert_image_div.setAttribute("id",this.id);
+        var id_name = this.id;
+        dessert_image_div.setAttribute("id",id_name);
         var iceCream_image = document.createElement("img");
         iceCream_image.setAttribute("src",this.image);
+        iceCream_image.setAttribute("class","ice");
+
         iceCream_image.style.width = "200px";
         dessert_image_div.classList.add("dessert-image");
         var iceCream_title = document.createElement("h1");

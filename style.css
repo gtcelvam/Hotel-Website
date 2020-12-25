@@ -179,10 +179,19 @@ nav li a:hover>i{
 /* Dessert Starts here */
 .varieties{
     position: relative;
+    display: flex;
 }
 .dessert-image{
+    margin: 10px;
     position: relative;
     height: auto;
+    text-align: center;
+}
+.dessert-image h1{
+    font-size: 1rem;
+}
+.ice{
+    border-radius: 5px;
 }
 
 /* Dessert Ends here */
