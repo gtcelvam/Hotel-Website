@@ -65,43 +65,46 @@ filterbutton.forEach(function(btn){
    }
 });
 /* Dessert Slider */
-const iceCream_list =[{i_name : "falooda",id : "falooda",title : "Falooda",price : "2$",image : "https://shwetainthekitchen.com/wp-content/uploads/2020/06/IMG_0058-scaled.jpg"},
-                      {i_name : "strawberry",id : "strawberry",title : "Strawberry",price : "1.8$",image : "https://www.biggerbolderbaking.com/wp-content/uploads/2018/05/Strawberry-Ice-Cream-Temp-2.jpg"},
-                      {i_name : "chocolate",id : "chocolate",title : "Chocolate",price : "2.1$",image : "https://www.davidlebovitz.com/wp-content/uploads/2020/05/Chocolate-chip-ice-cream-gelato-amaro-recipe_-9.jpg"},
-                      {i_name : "vennila",id : "vennila",title : "Vennila",price : "2.3$",image : "https://laurenslatest.com/wp-content/uploads/2020/08/vanilla-ice-cream-5-copy.jpg"},
-                      {i_name : "cookies n cream",id : "cookies n cream",title : "Cookies n cream",price : "2.1$",image : "https://homemadehooplah.com/wp-content/uploads/2016/07/Cookies-and-Cream-Ice-Cream-4.jpg"},
-                      {i_name : "buttered pecan",id : "buttered pecan",title : "Buttered pecan",price : "2$",image : "https://lemonsandzest.com/wp-content/uploads/2019/07/Maple-Cinnamon-Pecan-No-Churn-Ice-Cream-28.jpg"},
-                      {i_name : "neapolitan",id : "neapolitan",title : "Neapolitan",price : "2$",image : "https://beautyberryboutique.weebly.com/uploads/2/5/9/1/25911687/s971665060652142755_p1_i1_w736.jpeg"}];
-const varieties = document.querySelector(".varieties");
-class iceCream{
-    constructor(title,image,id){
-        this.title = title;
-        this.image = image;
-        this.id = id;
-    }
-    getIceCream(){
-        var dessert_image_div = document.createElement("div");
-        var id_name = this.id;
-        dessert_image_div.setAttribute("id",id_name);
-        var iceCream_image = document.createElement("img");
-        iceCream_image.setAttribute("src",this.image);
-        iceCream_image.setAttribute("class","ice");
-
-        iceCream_image.style.width = "200px";
-        dessert_image_div.classList.add("dessert-image");
-        var iceCream_title = document.createElement("h1");
-        iceCream_title.innerHTML = `<i>${this.title}</i>`;
-        dessert_image_div.appendChild(iceCream_image);
-        dessert_image_div.appendChild(iceCream_title);
-        varieties.appendChild(dessert_image_div);
-    }
+const iceCream_list =[{i_name : "falooda",category:"iceCream",id : "falooda",title : "Falooda",price : "2$",image : "https://shwetainthekitchen.com/wp-content/uploads/2020/06/IMG_0058-scaled.jpg"},
+                      {i_name : "strawberry",category:"iceCream",id : "strawberry",title : "Strawberry",price : "1.8$",image : "https://www.biggerbolderbaking.com/wp-content/uploads/2018/05/Strawberry-Ice-Cream-Temp-2.jpg"},
+                      {i_name : "chocolate",category:"iceCream",id : "chocolate",title : "Chocolate",price : "2.1$",image : "https://www.davidlebovitz.com/wp-content/uploads/2020/05/Chocolate-chip-ice-cream-gelato-amaro-recipe_-9.jpg"},
+                      {i_name : "vennila",category:"iceCream",id : "vennila",title : "Vennila",price : "2.3$",image : "https://laurenslatest.com/wp-content/uploads/2020/08/vanilla-ice-cream-5-copy.jpg"},
+                      {i_name : "cookies n cream",category:"iceCream",id : "cookies n cream",title : "Cookies n cream",price : "2.1$",image : "https://homemadehooplah.com/wp-content/uploads/2016/07/Cookies-and-Cream-Ice-Cream-4.jpg"},
+                      {i_name : "buttered pecan",category:"iceCream",id : "buttered pecan",title : "Buttered pecan",price : "2$",image : "https://lemonsandzest.com/wp-content/uploads/2019/07/Maple-Cinnamon-Pecan-No-Churn-Ice-Cream-28.jpg"},
+                      {i_name : "neapolitan",category:"iceCream",id : "neapolitan",title : "Neapolitan",price : "2$",image : "https://beautyberryboutique.weebly.com/uploads/2/5/9/1/25911687/s971665060652142755_p1_i1_w736.jpeg"}];
+const milkShake_list = [{i_name : "chocolate",category:"milkShake",id : "chocolate",title : "Chocolate",price : "2$",image : "https://www.elephantasticvegan.com/wp-content/uploads/2018/08/vegan-chocolate-milkshake-7.jpg"},
+                        {i_name : "strawberry",category:"milkShake",id : "strawberry",title : "Strawberry",price : "2$",image : "https://i.pinimg.com/736x/4f/57/d9/4f57d9c33343fddc5581707e37a1c1cf.jpg"},
+                        {i_name : "graphes",category:"milkShake",id : "graphes",title : "Graphes",price : "2$",image : "https://73f0e1518e903443913e6712-triedandtastycom.netdna-ssl.com/wp-content/uploads/2016/05/grape-smoothie-05.jpg"},
+                        {i_name : "papaya",category:"milkShake",id : "papaya",title : "Papaya",price : "2$",image : "https://thasneen.com/cooking/wp-content/uploads/2010/04/pappaya-milkshake-2.jpg"},
+                        {i_name : "banana",category:"milkShake",id : "banana",title : "Banana",price : "2$",image : "https://i.pinimg.com/originals/6e/68/5d/6e685d8a9214ca11e70b2cc11653ec2b.jpg"},
+                        {i_name : "kiwi",category:"milkShake",id : "kiwi",title : "Kiwi",price : "2$",image : "https://cdn.pixabay.com/photo/2017/07/25/17/28/smoothie-2538962_960_720.jpg"},
+                        {i_name : "pineapple",category:"milkShake",id : "pineapple",title : "pineapple",price : "2$",image : "https://i.pinimg.com/originals/ec/0f/25/ec0f25a4bd5ccde0c516fc4df9f66be6.jpg"}];
+const dessert = document.querySelector(".section-dessert");
+const icecream_container = document.querySelector(".icecream-slider");
+const milkshake_container = document.querySelector(".milkshake-slider");
+function getitem(source){
+    var slider = source.map(function(item){
+       return `
+        <div class="slider-${item.category}">
+          <div class="varieties">
+            <div class="dessert-image" id="${item.id}">
+                <img class="images" src="${item.image}" width="200px">
+                <div class="description">
+                <h1><i>${item.title}</i></h1>
+                <p>Price : ${item.price}</P>
+                <button class="dessert-btn">Order here</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        `
+    });
+    var final = slider.join("");
+    return final;
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
-    iceCream_list.forEach(creation);
+        icecream_container.innerHTML= getitem(iceCream_list);
+        milkshake_container.innerHTML= getitem(milkShake_list);
 });
 
-function creation(item){
-    var ready = new iceCream(item.title,item.image,item.id);
-    ready.getIceCream();
-}

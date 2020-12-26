@@ -182,18 +182,32 @@ nav li a:hover>i{
     display: flex;
 }
 .dessert-image{
+    width: 300px;
     margin: 10px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
     height: auto;
     text-align: center;
 }
 .dessert-image h1{
     font-size: 1rem;
 }
-.ice{
+.images{
     border-radius: 5px;
 }
-
+.dessert-btn{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e98ee4;
+}
+.description{
+    display: none;
+}
+.dessert-image:hover>.description{
+    display: block;
+}
 /* Dessert Ends here */
 /* Footer */
 footer{
