@@ -177,16 +177,21 @@ nav li a:hover>i{
     text-shadow: 2px 4px 4px black;
 }
 /* Dessert Starts here */
+.dessert-container{
+    margin: auto;
+    overflow: hidden;
+    width: 90%;
+}
 .varieties{
     position: relative;
     display: flex;
 }
 .dessert-image{
-    width: 300px;
+    width: 350px;
     margin: 10px;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     height: auto;
     text-align: center;
 }
@@ -204,9 +209,22 @@ nav li a:hover>i{
 }
 .description{
     display: none;
+    position: relative;
+    left: 0px;
+    z-index: -1;
+    margin: 0px 10px;
 }
 .dessert-image:hover>.description{
     display: block;
+    animation: anime-slider 0.3s ease-in-out;
+}
+@keyframes anime-slider{
+    0%{
+        left: -150px;
+    }
+    100%{
+        left: 0px;
+    }
 }
 /* Dessert Ends here */
 /* Footer */
