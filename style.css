@@ -95,7 +95,7 @@
 .title img{
     position: absolute;
     width: 80px;
-    left: 0px;
+    right: 0px;
     top: 0px;
 }
 .section-center{
@@ -184,11 +184,13 @@ nav li a:hover>i{
 }
 .varieties{
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
 }
 .dessert-image{
-    width: 350px;
-    margin: 10px;
+    width: 320px;
+    margin: 20px 0px;
     position: relative;
     display: flex;
     justify-content: left;
