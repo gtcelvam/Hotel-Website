@@ -160,6 +160,10 @@ nav li a:hover>i{
 
 /*End of  Navbar */
 /* Slider */
+.section-dessert{
+    margin: auto;
+    width: 85%;
+}
 .slider-container{
     position: absolute;
     width: 100%;
